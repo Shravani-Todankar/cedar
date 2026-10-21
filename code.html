@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cedar Management Consulting | We make Strategy &amp; Innovation work!</title>
+<!-- Font Awesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+<!-- Google Fonts: Newsreader (Editorial Serif) & Plus Jakarta Sans (Clean Modern Sans) -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cedar: {
+              DEFAULT: '#567C43',
+              dark: '#173A32',
+              forest: '#0E241F',
+              light: '#6E9B56',
+              tint: '#DFE8DF',
+              warm: '#F7F6F0',
+              charcoal: '#202523',
+              muted: '#747A76',
+              border: '#DCE1DB',
+              accent: '#C78B49'
+            }
+          },
+          fontFamily: {
+            serif: ['Newsreader', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-typography">
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #202523;
+      background-color: #FFFFFF;
+      overflow-x: hidden;
+    }
+    .font-editorial {
+      font-family: 'Newsreader', serif;
+    }
+  </style>
+<style data-purpose="hero-and-graphics">
+    /* Subtle foliage / branch watermark generator */
+    .hero-gradient {
+      background: linear-gradient(180deg, rgba(14, 36, 31, 0.4) 0%, rgba(14, 36, 31, 0.75) 55%, #173A32 100%),
+                  radial-gradient(circle at 75% 20%, rgba(199, 139, 73, 0.25) 0%, transparent 50%);
+    }
+    .waveform-bar {
+      transition: height 0.2s ease;
+    }
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .line-clamp-3 {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-cedar selection:text-white">
+<!-- BEGIN: UtilityHeader -->
+<!-- Top utility tier with global operations, FinTech lab links, and contact -->
+<div class="bg-[#F7F6F0] border-b border-cedar-border text-[12px] font-medium text-cedar-muted px-4 lg:px-12 py-2">
+<div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+<div class="flex items-center space-x-6 overflow-x-auto py-0.5">
+<div class="group relative cursor-pointer flex items-center gap-1.5 hover:text-cedar-dark transition-colors">
+<i class="fa-solid fa-globe text-cedar"></i>
+<span>Cedar Worldwide</span>
+<i class="fa-solid fa-chevron-down text-[9px] opacity-70"></i>
+</div>
+<span class="text-cedar-border">|</span>
+<a class="hover:text-cedar-dark transition-colors flex items-center gap-1.5" href="#fintech-lab">
+<span class="w-1.5 h-1.5 rounded-full bg-cedar"></span>
+<span>Cedar-IBSi FinTech Lab</span>
+</a>
+<span class="text-cedar-border hidden sm:inline">|</span>
+<a class="hover:text-cedar-dark transition-colors hidden sm:inline" href="#experts">Cedar-IBSi Experts</a>
+</div>
+<div class="flex items-center space-x-5 ml-auto">
+<a class="text-cedar-accent font-semibold hover:text-cedar-dark transition-colors flex items-center gap-1.5" href="#contact-dialogue">
+<span>Get In Touch</span>
+<i class="fa-solid fa-arrow-right text-[10px]"></i>
+</a>
+</div>
+</div>
+</div>
+<!-- END: UtilityHeader -->
+<!-- BEGIN: MainHeader -->
+<!-- Sticky primary navigation header with logo, mega-menus, and CTAs -->
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-cedar-border shadow-xs">
+<div class="max-w-7xl mx-auto px-4 lg:px-12 h-20 flex items-center justify-between">
+<!-- Cedar Brand Emblem & Logotype -->
+<a aria-label="Cedar Home" class="flex items-center gap-3 group focus:outline-none" href="#">
+<div class="w-11 h-11 relative flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
+<!-- Circular target / tree emblem matching Cedar brand -->
+<svg class="w-full h-full" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<circle cx="24" cy="24" fill="#DFE8DF" fill-opacity="0.25" r="22" stroke="#567C43" stroke-width="2.5"></circle>
+<circle cx="24" cy="24" r="16" stroke="#173A32" stroke-dasharray="3 3" stroke-width="1.8"></circle>
+<circle cx="24" cy="24" r="10" stroke="#567C43" stroke-width="2"></circle>
+<path d="M24 10V38M16 20H32M18 28H30M20 34H28" stroke="#173A32" stroke-linecap="round" stroke-width="2"></path>
+<circle cx="24" cy="24" fill="#C78B49" r="3"></circle>
+</svg>
+</div>
+<div class="flex flex-col">
+<span class="text-2xl font-black tracking-[0.25em] text-cedar-dark leading-none">CEDAR</span>
+<span class="text-[8px] font-bold tracking-[0.22em] text-cedar-muted mt-1 uppercase">Strategy &amp; Innovation</span>
+</div>
+</a>
+<!-- Desktop Navigation Menu -->
+<nav class="hidden lg:flex items-center space-x-7 text-sm font-semibold text-cedar-charcoal">
+<div class="group relative py-6">
+<a class="flex items-center gap-1.5 hover:text-cedar transition-colors" href="#insights">
+<span>CedarView Insights</span>
+<i class="fa-solid fa-angle-down text-[10px] text-cedar-muted group-hover:rotate-180 transition-transform"></i>
+</a>
+<!-- Dropdown preview card -->
+<div class="absolute top-full left-0 w-72 bg-white rounded-b-xl shadow-xl border border-cedar-border p-4 hidden group-hover:block transition-all duration-200">
+<span class="text-[10px] font-bold uppercase tracking-wider text-cedar block mb-2">Featured Intelligence</span>
+<a class="block p-2 rounded-lg hover:bg-cedar-warm transition-colors" href="#spotlight">
+<span class="text-xs font-bold text-cedar-dark block">Banking Trends 2026</span>
+<span class="text-[11px] text-cedar-muted">AI-led Banking &amp; Executive Playbooks</span>
+</a>
+<a class="block p-2 rounded-lg hover:bg-cedar-warm transition-colors mt-1" href="#podcast">
+<span class="text-xs font-bold text-cedar-dark block">Executive Podcast Series</span>
+<span class="text-[11px] text-cedar-muted">EP152: Steering Stability</span>
+</a>
+</div>
+</div>
+<div class="group relative py-6">
+<a class="flex items-center gap-1.5 hover:text-cedar transition-colors" href="#client-cases">
+<span>Industry Coverage</span>
+<i class="fa-solid fa-angle-down text-[10px] text-cedar-muted group-hover:rotate-180 transition-transform"></i>
+</a>
+</div>
+<div class="group relative py-6">
+<a class="flex items-center gap-1.5 hover:text-cedar transition-colors" href="#about-heritage">
+<span>Practice Areas</span>
+<i class="fa-solid fa-angle-down text-[10px] text-cedar-muted group-hover:rotate-180 transition-transform"></i>
+</a>
+</div>
+<a class="hover:text-cedar transition-colors py-6" href="#careers">Careers</a>
+<a class="hover:text-cedar transition-colors py-6" href="#about-heritage">About Cedar</a>
+</nav>
+<!-- Action Buttons -->
+<div class="flex items-center space-x-4">
+<button aria-label="Search" class="w-10 h-10 rounded-full border border-cedar-border flex items-center justify-center text-cedar-muted hover:text-cedar-dark hover:border-cedar transition-all focus:outline-none" id="search-toggle-btn">
+<i class="fa-solid fa-magnifying-glass text-xs"></i>
+</button>
+<a class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-cedar text-white hover:bg-cedar-dark shadow-sm hover:shadow transition-all duration-200" href="#contact-dialogue">
+<span>Consult an Advisor</span>
+</a>
+<!-- Mobile Hamburger -->
+<button aria-label="Toggle Navigation" class="lg:hidden w-10 h-10 flex items-center justify-center text-cedar-dark focus:outline-none" id="mobile-menu-btn">
+<i class="fa-solid fa-bars text-xl"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Slide Menu -->
+<div class="hidden lg:hidden border-t border-cedar-border bg-white px-6 py-6 space-y-4" id="mobile-menu">
+<a class="block font-semibold text-cedar-dark text-base py-1" href="#insights">CedarView Insights</a>
+<a class="block font-semibold text-cedar-dark text-base py-1" href="#client-cases">Industry Coverage</a>
+<a class="block font-semibold text-cedar-dark text-base py-1" href="#about-heritage">Practice Areas</a>
+<a class="block font-semibold text-cedar-dark text-base py-1" href="#careers">Careers</a>
+<a class="block font-semibold text-cedar-dark text-base py-1" href="#about-heritage">About Cedar</a>
+<div class="pt-4 border-t border-cedar-border">
+<a class="block text-center py-3 bg-cedar text-white rounded-lg font-bold text-sm" href="#contact-dialogue">Consult an Advisor</a>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<!-- Immersive cinematic hero with dramatic twilight cedar canopy & Forbes recognition badge -->
+<section class="relative min-h-[580px] lg:min-h-[660px] flex items-center bg-cedar-dark text-white overflow-hidden" data-purpose="hero-banner">
+<!-- Background atmospheric photographic imagery & scenic cedar tree canopy -->
+<div class="absolute inset-0 z-0">
+<img alt="Majestic Cedar Landscape" class="w-full h-full object-cover object-center filter brightness-50 contrast-125 scale-105 transform hover:scale-100 transition-transform duration-1000 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPR41kOeFWtAwKKdZl8PFQ8DUIzKqylNXHPCeRJKafmJA7F5P0opVkWAESro_rp1ljjECDZBrCMOqOr7Os9aTxxhxfJ_-OzwG4RLjwOD0S6NrJHHDRUkZR0DVRqEIrpJOHxYlzofImiDJHsSCUKsdZiAcyJ2vyDlj8tjnwg49qZrtm0imYjLX8-dQRB3HfSyT2QxZPRDqsEs80LBZLUMQP43y4BMyakMjrTLnjc0wvgbGZXwEGHNXb"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<!-- Forbes Worldwide Recognition Floating Badge -->
+<div class="absolute top-8 right-6 lg:right-16 z-20 bg-white/95 text-cedar-charcoal backdrop-blur-sm p-4 rounded-sm border border-cedar-border shadow-2xl max-w-[170px] text-center transform -rotate-1 hover:rotate-0 transition-transform">
+<div class="font-serif italic font-bold text-xl tracking-tight text-black border-b border-gray-200 pb-1 mb-1.5">Forbes</div>
+<div class="text-[9px] font-extrabold uppercase tracking-widest text-cedar-dark leading-tight">WORLD'S BEST</div>
+<div class="text-[8px] font-bold uppercase tracking-wider text-cedar leading-tight">MANAGEMENT</div>
+<div class="text-[8px] font-medium tracking-tight text-gray-600">CONSULTING FIRMS</div>
+<div class="mt-1.5 inline-block bg-cedar-dark text-white text-[9px] px-2 py-0.5 font-bold rounded-xs tracking-wider">2024-2026</div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 lg:px-12 py-24 w-full">
+<div class="max-w-3xl">
+<!-- Eyebrow Tagline -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-cedar-tint text-xs font-semibold uppercase tracking-widest mb-6">
+<span class="w-2 h-2 rounded-full bg-cedar-accent animate-pulse"></span>
+<span>Global Strategy &amp; FinTech Advisory</span>
+</div>
+<!-- Headline with serif italic emphasis -->
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-light text-white tracking-tight leading-[1.15] mb-6">
+          We make <span class="font-serif italic font-semibold text-white">Strategy</span> &amp; <span class="font-serif italic text-cedar-tint font-bold">Innovation</span> work!
+        </h1>
+<!-- Subheadline text -->
+<p class="text-lg sm:text-xl text-gray-200 font-normal leading-relaxed max-w-2xl mb-10">
+          Assisting financial institutions, sovereign leaders, and digital innovators across 40 years to transform breakthrough strategic thinking into institutional reality.
+        </p>
+<!-- CTA Buttons -->
+<div class="flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-cedar text-white font-bold text-sm tracking-wide uppercase hover:bg-cedar-light shadow-lg hover:shadow-cedar/40 transition-all duration-300 group" href="#insights">
+<span>Explore our Insights</span>
+<i class="fa-solid fa-arrow-right-long text-xs group-hover:translate-x-1.5 transition-transform"></i>
+</a>
+<a class="inline-flex items-center gap-2 px-6 py-4 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold text-sm backdrop-blur-sm border border-white/25 transition-all" href="#client-cases">
+<span>Discover Practice Areas</span>
+<i class="fa-solid fa-chevron-right text-[10px] text-cedar-accent"></i>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: SpotlightSection -->
+<!-- Featured Intelligence Hub with asymmetric layout matching the reference grid -->
+<section class="py-20 lg:py-28 bg-[#FFFFFF] border-b border-cedar-border" id="spotlight">
+<div class="max-w-7xl mx-auto px-4 lg:px-12">
+<!-- Section Title & Category Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-4 border-b border-cedar-border gap-4">
+<div>
+<span class="text-xs font-bold uppercase tracking-[0.2em] text-cedar block mb-2">Editorial Spotlight</span>
+<h2 class="text-3xl lg:text-4xl font-serif font-bold text-cedar-dark">Strategic Intelligence for Financial Leaders</h2>
+</div>
+<a class="text-sm font-semibold text-cedar hover:text-cedar-dark inline-flex items-center gap-2 group" href="#all-insights">
+<span>View all 2026 Summits &amp; Reports</span>
+<i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+</a>
+</div>
+<!-- Editorial Mosaic Grid: Row 1 -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-8">
+<!-- Primary Feature: Building a Future-Ready Bank Muscat (6 cols) -->
+<article class="lg:col-span-6 bg-cedar-warm rounded-xl overflow-hidden border border-cedar-border shadow-xs hover:shadow-xl transition-all duration-300 group flex flex-col">
+<div class="relative h-64 overflow-hidden bg-cedar-dark">
+<img alt="Muscat Financial District Summit" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANaG33Gv6tAhx18ogpojuby-SM34Eo273GQgy0julrCFNKwmu67ba-0286thGgD7LMWN1IDEZdjzdKViWhh3dhnRqCDNSiQzANGVE4HR0j5AiglT20vuhB6G3tvPpybBp0tFC7mkdj9iPmP_JvOosVz39ubwC18CFbe1XkYHtFTe_ASicjvromS2Z851oE7f-UWwYguOM6OLP7B7PwduZIj2jM46h50GcgtTdxGLDKqqMZUbYDq8JR"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+<div class="absolute top-4 left-4 bg-cedar text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-sm shadow">
+              Summit Keynote • Muscat
+            </div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<span class="text-xs text-cedar-tint font-medium">Muscat Executive Conclave</span>
+<h3 class="text-xl lg:text-2xl font-serif font-bold leading-tight mt-1 group-hover:text-cedar-tint transition-colors">
+                Building a Future-Ready Bank Muscat
+              </h3>
+</div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<p class="text-cedar-muted text-sm leading-relaxed mb-6">
+              On 29.10.26, the Muscat leadership summit convenes executive chairs and treasurers to explore AI-led transformation, modern core migration, and hyper-personalized transaction banking.
+            </p>
+<div class="pt-4 border-t border-cedar-border/60 flex items-center justify-between">
+<span class="text-xs font-semibold text-cedar-dark">Date: October 29</span>
+<a class="text-xs font-bold uppercase tracking-wider text-cedar group-hover:text-cedar-dark inline-flex items-center gap-1.5" href="#read-muscat">
+<span>Read More</span>
+<i class="fa-solid fa-arrow-right text-[10px]"></i>
+</a>
+</div>
+</div>
+</article>
+<!-- Secondary Stacked Spotlight: Role of Leadership (6 cols) -->
+<article class="lg:col-span-6 bg-cedar-warm rounded-xl overflow-hidden border border-cedar-border shadow-xs hover:shadow-xl transition-all duration-300 group flex flex-col">
+<div class="relative h-64 overflow-hidden bg-cedar-charcoal">
+<img alt="Executive Leadership Meeting" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvcpaDHqrWY3bd2GF3HpuW_QiXj5nnU4bmyAtatEzKYVNlyGMGmGsJDDGX8Tso3yOhCZscs7sGp3r1UsKSCIFo8itolbXsn3_ttBKk17yH18n57LJEaTKcgJsgBDOnQlSyLGDDKGmdW0lYf25Gy28ZvY9Sqc9D5DCMn6ll5LjmPjj5GXzUYrPfthyTILvnoMvYtsyXnkbewD3jOTOATfEt43jSJQEoyqoKw2Ic9ICNe9F8k4p5wWru"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+<div class="absolute top-4 left-4 bg-cedar-accent text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-sm shadow">
+              Governance &amp; HR
+            </div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<span class="text-xs text-cedar-tint font-medium">Cedar Research Memorandum</span>
+<h3 class="text-xl lg:text-2xl font-serif font-bold leading-tight mt-1 group-hover:text-cedar-tint transition-colors">
+                Role of Leadership Drives Performance Accountability
+              </h3>
+</div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<p class="text-cedar-muted text-sm leading-relaxed mb-6">
+              Senior HR leaders and Board directors identify decisive executive leadership and transparent BSC metrics as the primary lever shaping institutional 2026 priorities.
+            </p>
+<div class="pt-4 border-t border-cedar-border/60 flex items-center justify-between">
+<span class="text-xs font-semibold text-cedar-dark">Whitepaper • 18 min read</span>
+<a class="text-xs font-bold uppercase tracking-wider text-cedar group-hover:text-cedar-dark inline-flex items-center gap-1.5" href="#read-leadership">
+<span>Read More</span>
+<i class="fa-solid fa-arrow-right text-[10px]"></i>
+</a>
+</div>
+</div>
+</article>
+</div>
+<!-- Editorial Mosaic Grid: Row 2 (3-Column Layout) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1: Banking Technology Playbook -->
+<div class="bg-white rounded-xl border border-cedar-border p-6 shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="w-10 h-10 rounded-lg bg-cedar-tint/50 text-cedar flex items-center justify-center mb-4 text-lg">
+<i class="fa-solid fa-shield-halved"></i>
+</div>
+<span class="text-[11px] font-bold uppercase tracking-wider text-cedar-muted">Cedar-IBSi Advisory</span>
+<h4 class="text-lg font-serif font-bold text-cedar-dark group-hover:text-cedar transition-colors mt-1 mb-2">
+              Banking Technology Playbook for Uncertain Times
+            </h4>
+<p class="text-xs text-cedar-muted leading-relaxed mb-4">
+              Building Resilience: Strengthening Banking Technology Infrastructure and cloud sovereign risk mitigation amid rising geopolitical headwinds.
+            </p>
+</div>
+<a class="text-xs font-bold text-cedar group-hover:text-cedar-dark inline-flex items-center gap-1" href="#playbook">
+<span>Read More</span>
+<i class="fa-solid fa-arrow-right text-[10px]"></i>
+</a>
+</div>
+<!-- Card 2: Executive Playbook: Steering Stability -->
+<div class="bg-white rounded-xl border border-cedar-border p-6 shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="w-10 h-10 rounded-lg bg-cedar-tint/50 text-cedar flex items-center justify-center mb-4 text-lg">
+<i class="fa-solid fa-compass"></i>
+</div>
+<span class="text-[11px] font-bold uppercase tracking-wider text-cedar-muted">Boardroom Briefing</span>
+<h4 class="text-lg font-serif font-bold text-cedar-dark group-hover:text-cedar transition-colors mt-1 mb-2">
+              Executive Playbook: Steering Stability in Uncertain Times
+            </h4>
+<p class="text-xs text-cedar-muted leading-relaxed mb-4">
+              Strategic agility, balance sheet resilience, and proactive leadership cadence key to navigating market disruptions without sacrificing ROE.
+            </p>
+</div>
+<a class="text-xs font-bold text-cedar group-hover:text-cedar-dark inline-flex items-center gap-1" href="#steering-stability">
+<span>Read More</span>
+<i class="fa-solid fa-arrow-right text-[10px]"></i>
+</a>
+</div>
+<!-- Card 3: Bank Playbook in a West Asia Crisis -->
+<div class="bg-white rounded-xl border border-cedar-border p-6 shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="w-10 h-10 rounded-lg bg-cedar-tint/50 text-cedar flex items-center justify-center mb-4 text-lg">
+<i class="fa-solid fa-landmark"></i>
+</div>
+<span class="text-[11px] font-bold uppercase tracking-wider text-cedar-muted">Regional Intelligence</span>
+<h4 class="text-lg font-serif font-bold text-cedar-dark group-hover:text-cedar transition-colors mt-1 mb-2">
+              Bank Playbook in a West Asia Crisis
+            </h4>
+<p class="text-xs text-cedar-muted leading-relaxed mb-4">
+              Understanding how geopolitical uncertainty influences capital flight, regulatory stress testing, and banking liquidity frameworks in West Asia.
+            </p>
+</div>
+<a class="text-xs font-bold text-cedar group-hover:text-cedar-dark inline-flex items-center gap-1" href="#west-asia">
+<span>Read More</span>
+<i class="fa-solid fa-arrow-right text-[10px]"></i>
+</a>
+</div>
+<!-- Card 4: Cedar View: Global & Indian Banking Trends -->
+<div class="bg-white rounded-xl border border-cedar-border p-6 shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="w-10 h-10 rounded-lg bg-cedar-tint/50 text-cedar flex items-center justify-center mb-4 text-lg">
+<i class="fa-solid fa-chart-line"></i>
+</div>
+<span class="text-[11px] font-bold uppercase tracking-wider text-cedar-muted">Market Benchmark</span>
+<h4 class="text-lg font-serif font-bold text-cedar-dark group-hover:text-cedar transition-colors mt-1 mb-2">
+              Cedar View: Global &amp; Indian Banking Trends
+            </h4>
+<p class="text-xs text-cedar-muted leading-relaxed mb-4">
+              Emerging tech adoption, unified digital payment corridors, and changing wealth-customer expectations reshape the banking horizon.
+            </p>
+</div>
+<a class="text-xs font-bold text-cedar group-hover:text-cedar-dark inline-flex items-center gap-1" href="#india-trends">
+<span>Know More</span>
+<i class="fa-solid fa-arrow-right text-[10px]"></i>
+</a>
+</div>
+<!-- Card 5: 2026 Series of Future-Ready Summits -->
+<div class="bg-white rounded-xl border border-cedar-border p-6 shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="w-10 h-10 rounded-lg bg-cedar-tint/50 text-cedar flex items-center justify-center mb-4 text-lg">
+<i class="fa-solid fa-users"></i>
+</div>
+<span class="text-[11px] font-bold uppercase tracking-wider text-cedar-muted">Global Events Series</span>
+<h4 class="text-lg font-serif font-bold text-cedar-dark group-hover:text-cedar transition-colors mt-1 mb-2">
+              2026 Series of 'Building a Future-Ready Bank' Summits
+            </h4>
+<p class="text-xs text-cedar-muted leading-relaxed mb-4">
+              The banking world is transforming at scale. It's time to have meaningful, data-backed strategic conversations with industry peers.
+            </p>
+</div>
+<a class="text-xs font-bold text-cedar group-hover:text-cedar-dark inline-flex items-center gap-1" href="#summits-series">
+<span>Know More</span>
+<i class="fa-solid fa-arrow-right text-[10px]"></i>
+</a>
+</div>
+<!-- Card 6: Everything Financial Services* (CoE) -->
+<div class="bg-white rounded-xl border border-cedar-border p-6 shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="w-10 h-10 rounded-lg bg-cedar-tint/50 text-cedar flex items-center justify-center mb-4 text-lg">
+<i class="fa-solid fa-cubes"></i>
+</div>
+<span class="text-[11px] font-bold uppercase tracking-wider text-cedar-muted">Center of Excellence</span>
+<h4 class="text-lg font-serif font-bold text-cedar-dark group-hover:text-cedar transition-colors mt-1 mb-2">
+              Everything Financial Services* (CoE)
+            </h4>
+<p class="text-xs text-cedar-muted leading-relaxed mb-4">
+              Our specialist Financial Services practice serves as the firm's global engine room of excellence, offering deep functional innovation and execution rigor.
+            </p>
+</div>
+<a class="text-xs font-bold text-cedar group-hover:text-cedar-dark inline-flex items-center gap-1" href="#financial-coe">
+<span>Read More</span>
+<i class="fa-solid fa-arrow-right text-[10px]"></i>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: SpotlightSection -->
+<!-- BEGIN: PodcastFeatureSection -->
+<!-- Audio player showcase with functional playback controls simulation and waveform UI -->
+<section class="py-16 bg-[#F7F6F0] border-b border-cedar-border" id="podcast">
+<div class="max-w-7xl mx-auto px-4 lg:px-12">
+<div class="flex items-center justify-between mb-6">
+<div class="flex items-center gap-3">
+<span class="w-3 h-3 rounded-full bg-cedar animate-ping"></span>
+<span class="text-xs font-bold uppercase tracking-[0.2em] text-cedar">Latest Executive Podcast</span>
+</div>
+<a class="text-xs font-bold text-cedar hover:text-cedar-dark flex items-center gap-1" href="#all-podcasts">
+<span>Browse 150+ Cedar Podcasts</span>
+<i class="fa-solid fa-arrow-right text-[10px]"></i>
+</a>
+</div>
+<!-- Podcast Player Card -->
+<div class="bg-white rounded-2xl border border-cedar-border p-6 lg:p-8 shadow-sm">
+<div class="flex flex-col lg:flex-row items-center gap-6 lg:gap-8">
+<!-- Podcast Cover Thumbnail with Gold Advisory Accent -->
+<div class="relative w-28 h-28 lg:w-36 lg:h-36 rounded-xl overflow-hidden flex-shrink-0 bg-cedar-dark border border-cedar-border shadow-inner group">
+<img alt="Podcast Chess Episode Art" class="w-full h-full object-cover opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoTFtF-jH7FxmjraMH8TWYC7oGLZ3zJ-LXBA4_yJfDl3fiMgjBi4z5pQrEgFkjW18GSe46fbTTmhfnFcV3upNGSc69tdibKfEMF_EwdHQZEr2SPyhsD-dzeaB8k3JjfrGaI3VzFxLM1tyzG8qxKnYcVhdxjxEt0iQ115zEXeXMgYkKujyOzDN1QaWw0A1F6mG1KzfqMWQPZR4UEWDBedsPNHg0X4RzvdUNW5u90YesSjBngb77-1P0"/>
+<div class="absolute inset-0 bg-cedar-dark/40 flex items-center justify-center">
+<i class="fa-solid fa-podcast text-3xl text-white"></i>
+</div>
+</div>
+<!-- Player Controls & Audio Metadata -->
+<div class="flex-1 w-full">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+<span class="text-[11px] font-bold text-cedar uppercase tracking-wider bg-cedar-tint px-2.5 py-0.5 rounded-full">
+                Episode 152 • Strategy Series
+              </span>
+<span class="text-xs font-medium text-cedar-muted">Cedar Management Consulting</span>
+</div>
+<h3 class="text-xl lg:text-2xl font-serif font-bold text-cedar-dark mb-4">
+              EP152: Steering Stability; Executive Playbook for Uncertain Times
+            </h3>
+<!-- Audio Waveform Visualization Simulation -->
+<div class="flex items-end gap-1 h-9 mb-4 px-1 py-1 bg-cedar-warm rounded-md" data-purpose="audio-visualizer" id="waveform-container">
+<!-- Dynamically structured waveform bars -->
+<span class="w-1 bg-cedar rounded-full h-3"></span>
+<span class="w-1 bg-cedar rounded-full h-6"></span>
+<span class="w-1 bg-cedar rounded-full h-4"></span>
+<span class="w-1 bg-cedar rounded-full h-7"></span>
+<span class="w-1 bg-cedar rounded-full h-5"></span>
+<span class="w-1 bg-cedar rounded-full h-8"></span>
+<span class="w-1 bg-cedar rounded-full h-4"></span>
+<span class="w-1 bg-cedar rounded-full h-6"></span>
+<span class="w-1 bg-cedar rounded-full h-3"></span>
+<span class="w-1 bg-cedar-muted/40 rounded-full h-5"></span>
+<span class="w-1 bg-cedar-muted/40 rounded-full h-7"></span>
+<span class="w-1 bg-cedar-muted/40 rounded-full h-3"></span>
+<span class="w-1 bg-cedar-muted/40 rounded-full h-6"></span>
+<span class="w-1 bg-cedar-muted/40 rounded-full h-8"></span>
+<span class="w-1 bg-cedar-muted/40 rounded-full h-4"></span>
+<span class="w-1 bg-cedar-muted/40 rounded-full h-6"></span>
+<span class="w-1 bg-cedar-muted/40 rounded-full h-5"></span>
+<span class="w-1 bg-cedar-muted/40 rounded-full h-7"></span>
+<span class="w-1 bg-cedar-muted/40 rounded-full h-4"></span>
+<span class="w-1 bg-cedar-muted/40 rounded-full h-2"></span>
+<span class="w-1 bg-cedar-muted/40 rounded-full h-5"></span>
+<span class="w-1 bg-cedar-muted/40 rounded-full h-7"></span>
+<span class="w-1 bg-cedar-muted/40 rounded-full h-3"></span>
+<span class="w-1 bg-cedar-muted/40 rounded-full h-5"></span>
+<span class="w-1 bg-cedar-muted/40 rounded-full h-8"></span>
+</div>
+<!-- Play Controls & Progress Bar -->
+<div class="flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center space-x-3">
+<button aria-label="Play Episode" class="w-11 h-11 rounded-full bg-cedar hover:bg-cedar-dark text-white flex items-center justify-center shadow-md transition-all focus:outline-none" id="podcast-play-btn">
+<i class="fa-solid fa-play text-sm ml-0.5" id="podcast-play-icon"></i>
+</button>
+<button class="text-cedar-muted hover:text-cedar-dark text-xs p-1" title="Rewind 15s">
+<i class="fa-solid fa-rotate-left"></i> 15s
+                </button>
+<button class="text-cedar-muted hover:text-cedar-dark text-xs p-1" title="Fast Forward 30s">
+                  30s <i class="fa-solid fa-rotate-right"></i>
+</button>
+<button class="text-xs font-semibold px-2 py-0.5 rounded border border-cedar-border text-cedar-dark hover:bg-cedar-warm" id="playback-speed-btn">
+                  1x
+                </button>
+</div>
+<!-- Time and Actions -->
+<div class="flex items-center space-x-4 text-xs font-medium text-cedar-muted">
+<span id="podcast-time">04:32 / 38:15</span>
+<button class="hover:text-cedar-dark transition-colors" title="Share episode"><i class="fa-solid fa-share-nodes"></i></button>
+<button class="hover:text-cedar-dark transition-colors" title="Transcript"><i class="fa-solid fa-file-lines"></i></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: PodcastFeatureSection -->
+<!-- BEGIN: CedarInTheNews -->
+<!-- Arabian Business editorial feature magazine spreads matching source -->
+<section class="py-20 bg-white border-b border-cedar-border">
+<div class="max-w-7xl mx-auto px-4 lg:px-12">
+<div class="mb-12">
+<span class="text-xs font-bold uppercase tracking-[0.2em] text-cedar block mb-2">Media &amp; Press Leadership</span>
+<h2 class="text-3xl lg:text-4xl font-serif font-bold text-cedar-dark">Cedar in the News</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Feature 1: Arabian Business - Family Businesses NextGen -->
+<article class="relative rounded-2xl overflow-hidden bg-cedar-forest text-white group shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+<div class="p-8 lg:p-10 z-10">
+<!-- Publication Badge -->
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-[#EE2E24] text-white rounded-xs text-xs font-extrabold uppercase tracking-wider mb-6">
+              Arabian Business
+            </div>
+<h3 class="text-2xl lg:text-3xl font-serif font-bold leading-snug mb-4 group-hover:text-cedar-tint transition-colors">
+              What does the future hold for family businesses?
+            </h3>
+<p class="font-serif italic text-lg text-cedar-tint mb-6">
+              Has the NextGen checked out?
+            </p>
+<p class="text-sm text-gray-300 leading-relaxed mb-8">
+              What does the future hold for family businesses across the GCC and South Asia? Has the NextGen checked out? Eighty percent of the world's wealth transfers require restructured governance models to safeguard corporate endurance.
+            </p>
+<a class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-cedar-tint hover:text-white transition-colors" href="#arabian-business-1">
+<span>Read Full Article</span>
+<i class="fa-solid fa-arrow-right text-[10px]"></i>
+</a>
+</div>
+<!-- Editorial Accent Background Glow -->
+<div class="h-2 bg-gradient-to-r from-cedar via-cedar-accent to-cedar-light"></div>
+</article>
+<!-- Feature 2: Arabian Business - The Need for Speed -->
+<article class="relative rounded-2xl overflow-hidden bg-cedar-charcoal text-white group shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+<div class="p-8 lg:p-10 z-10">
+<!-- Publication Badge -->
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-[#EE2E24] text-white rounded-xs text-xs font-extrabold uppercase tracking-wider mb-6">
+              Arabian Business
+            </div>
+<h3 class="text-2xl lg:text-3xl font-serif font-bold leading-snug mb-4 group-hover:text-cedar-tint transition-colors">
+              The need for speed: Is long-term strategy dead?
+            </h3>
+<p class="font-serif italic text-lg text-cedar-tint mb-6">
+              Is long-term strategy dead in the age of rapid AI execution?
+            </p>
+<p class="text-sm text-gray-300 leading-relaxed mb-8">
+              The need for speed. Is long-term strategy dead? "I started my career as a consultant and strategist over three decades ago. Today, velocity without clarity is pure institutional hazard..."
+            </p>
+<a class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-cedar-tint hover:text-white transition-colors" href="#arabian-business-2">
+<span>Read Full Article</span>
+<i class="fa-solid fa-arrow-right text-[10px]"></i>
+</a>
+</div>
+<!-- Editorial Accent Background Glow -->
+<div class="h-2 bg-gradient-to-r from-cedar-accent via-cedar to-cedar-dark"></div>
+</article>
+</div>
+</div>
+</section>
+<!-- END: CedarInTheNews -->
+<!-- BEGIN: OurLatestInsights -->
+<!-- Dynamic Intelligence Library with active category filters matching all 8 reference categories -->
+<section class="py-20 lg:py-28 bg-[#F7F6F0] border-b border-cedar-border" id="insights">
+<div class="max-w-7xl mx-auto px-4 lg:px-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+<div>
+<span class="text-xs font-bold uppercase tracking-[0.2em] text-cedar block mb-2">Knowledge Archive</span>
+<h2 class="text-3xl lg:text-4xl font-serif font-bold text-cedar-dark">Our Latest Insights</h2>
+</div>
+<p class="text-sm text-cedar-muted max-w-md">
+          Proprietary research, methodologies, and executive papers authored by Cedar partners and FinTech analysts.
+        </p>
+</div>
+<!-- Filter Chips Bar with interactive active state switching -->
+<div class="flex items-center gap-2 overflow-x-auto pb-4 mb-10 no-scrollbar" id="insights-filter-group">
+<button class="filter-chip active-filter px-4 py-2 rounded-full text-xs font-bold transition-all bg-cedar text-white" data-filter="all">
+          All Insights
+        </button>
+<button class="filter-chip px-4 py-2 rounded-full text-xs font-semibold bg-white text-cedar-charcoal hover:bg-cedar-tint transition-all border border-cedar-border" data-filter="strategy">
+          Strategy
+        </button>
+<button class="filter-chip px-4 py-2 rounded-full text-xs font-semibold bg-white text-cedar-charcoal hover:bg-cedar-tint transition-all border border-cedar-border" data-filter="financial">
+          Financial Services
+        </button>
+<button class="filter-chip px-4 py-2 rounded-full text-xs font-semibold bg-white text-cedar-charcoal hover:bg-cedar-tint transition-all border border-cedar-border" data-filter="consumer">
+          Consumer
+        </button>
+<button class="filter-chip px-4 py-2 rounded-full text-xs font-semibold bg-white text-cedar-charcoal hover:bg-cedar-tint transition-all border border-cedar-border" data-filter="private-equity">
+          Private Equity
+        </button>
+<button class="filter-chip px-4 py-2 rounded-full text-xs font-semibold bg-white text-cedar-charcoal hover:bg-cedar-tint transition-all border border-cedar-border" data-filter="balanced-scorecard">
+          Balanced Scorecard
+        </button>
+<button class="filter-chip px-4 py-2 rounded-full text-xs font-semibold bg-white text-cedar-charcoal hover:bg-cedar-tint transition-all border border-cedar-border" data-filter="bank-strategy">
+          Bank Strategy
+        </button>
+</div>
+<!-- Insights Grid (3 Columns) with precise items from reference screenshot -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="insights-card-grid">
+<!-- Insight 1: Strategy -->
+<div class="insight-card bg-white rounded-xl overflow-hidden border border-cedar-border hover:shadow-lg transition-all group" data-category="strategy">
+<div class="relative h-44 overflow-hidden bg-cedar-dark">
+<img alt="Strategy Growth Roadmapping" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfUlKwexEdgMo7oD4DyJ4rJHEh_38fqe-fIMAv1akUhU6kGXV0Fs28DuT35aolKxOod17awCzwR5XbFgAoQEPvvMvBw3ZJS1J1Qa-tweaR2qofCcI-Hq0VleymyS_w3zGR9Eact4_FxkXRn_i7Rgbu2qrU2ESYzVSVREpABWquA4EoJc4Oquj2liwxVu957PJpvGvkAMrlTWRcUPgpcn_qoPyAOnA_mIPq4R-hicoiH3ggUhBMmKsO"/>
+<div class="absolute top-3 left-3 bg-black/60 backdrop-blur-xs text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded">
+              Strategy
+            </div>
+</div>
+<div class="p-6">
+<span class="text-[11px] font-semibold text-cedar-accent uppercase tracking-wider">The Need for Speed</span>
+<h3 class="text-lg font-serif font-bold text-cedar-dark group-hover:text-cedar transition-colors mt-1 mb-2">
+              Breakthrough Strategy for Young, High-Growth Companies
+            </h3>
+<p class="text-xs text-cedar-muted leading-relaxed mb-4">
+              Designing agile governance models that maintain corporate velocity while scaling governance frameworks.
+            </p>
+<a class="text-xs font-bold text-cedar hover:underline" href="#read-insight-1">Read Article →</a>
+</div>
+</div>
+<!-- Insight 2: Consumer -->
+<div class="insight-card bg-white rounded-xl overflow-hidden border border-cedar-border hover:shadow-lg transition-all group" data-category="consumer">
+<div class="relative h-44 overflow-hidden bg-cedar-dark">
+<img alt="Consumer Loyalty Open Store" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7AVCfQ4HZMrg_7--ulxHJC16bjb6OzCOPuNJyGO18mBt232JV60NOq7Wi-CQFQMyj_x2bepWVEuYvj5wRAES4RHM14Dsqi9H6ZcqSg_LgqMLKBhmBO_ye4alBnW3XGvHwACfGktvbDp-0KJ7GBrkxNVIJebjHHxurR-VXTDGiVQ6rOFtZ_f8LR5aTlm0E4VbRtCVCnXwvkG-JqehDp8nFQ05CxmnVLpZLJi7RM4KZ9MGgPr-33k0U"/>
+<div class="absolute top-3 left-3 bg-black/60 backdrop-blur-xs text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded">
+              Consumer
+            </div>
+</div>
+<div class="p-6">
+<span class="text-[11px] font-semibold text-cedar uppercase tracking-wider">CedarView Article</span>
+<h3 class="text-lg font-serif font-bold text-cedar-dark group-hover:text-cedar transition-colors mt-1 mb-2">
+              4 Strategic Dimensions for Building a Successful Loyalty Program
+            </h3>
+<p class="text-xs text-cedar-muted leading-relaxed mb-4">
+              Moving beyond points toward behavioral engagement and predictive lifetime customer value.
+            </p>
+<a class="text-xs font-bold text-cedar hover:underline" href="#read-insight-2">Read Article →</a>
+</div>
+</div>
+<!-- Insight 3: Financial Services -->
+<div class="insight-card bg-white rounded-xl overflow-hidden border border-cedar-border hover:shadow-lg transition-all group" data-category="financial">
+<div class="relative h-44 overflow-hidden bg-cedar-dark">
+<img alt="Financial Payment Technology" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeT_vBZ1KEL1VPJaSa2ZWIQ9K78tlDVqvTkiPteNcxyDOEwbg7aZhcafGyaCF6SujiS6tYM5G9a6V_j2tUZ8C68kxKM0_eW5-yHORx3bfukTteFJNTX76vbcFVSADSXbpOnL2DtLC09r0KvvhfcYJz1LHo5BWqom49JWEsTPMUqBOnyNA78ul-qAl_eG9Dc_5XBERKhcRAbXxrwG9k0CB2V6k-pm8E0qZzoLTxYp9mu-GPd9YbqRcQ"/>
+<div class="absolute top-3 left-3 bg-black/60 backdrop-blur-xs text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded">
+              Financial Services
+            </div>
+</div>
+<div class="p-6">
+<span class="text-[11px] font-semibold text-cedar-accent uppercase tracking-wider">CedarView Video Briefing</span>
+<h3 class="text-lg font-serif font-bold text-cedar-dark group-hover:text-cedar transition-colors mt-1 mb-2">
+              Key Innovations in Payment Technology &amp; Embedded Rails
+            </h3>
+<p class="text-xs text-cedar-muted leading-relaxed mb-4">
+              Real-time payment schemes, ISO 20022 messaging, and cross-border settlement architecture.
+            </p>
+<a class="text-xs font-bold text-cedar hover:underline" href="#read-insight-3">Watch Video →</a>
+</div>
+</div>
+<!-- Insight 4: Private Equity -->
+<div class="insight-card bg-white rounded-xl overflow-hidden border border-cedar-border hover:shadow-lg transition-all group" data-category="private-equity">
+<div class="relative h-44 overflow-hidden bg-cedar-dark">
+<img alt="Private Equity Skyline" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnpk47_nA82i83UCgDU2hWyRiqe2shZSSRzYD3kUawnAMFxWi4rpoKnuXjh8pPDBAYjb2SVhtz7l8DZK19IWMY1T-5OIzSHQ_CcfcZentvwCOBp2fZg2Yp2bfBIIUhXrpC2DWpcF9ZCZBOtp2fvfJG3N8MydlbpgKe2RCTI_A5pU5eWGTfZ7eS7bgpAXMe3ZXteltXhIDyjtSHwq525UsQzU9nQ1fGknWOwKxfXNMcwnwdoCxwO6Bq"/>
+<div class="absolute top-3 left-3 bg-black/60 backdrop-blur-xs text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded">
+              Private Equity
+            </div>
+</div>
+<div class="p-6">
+<span class="text-[11px] font-semibold text-cedar uppercase tracking-wider">CedarView Article</span>
+<h3 class="text-lg font-serif font-bold text-cedar-dark group-hover:text-cedar transition-colors mt-1 mb-2">
+              Challenges in International Private Equity Due Diligence
+            </h3>
+<p class="text-xs text-cedar-muted leading-relaxed mb-4">
+              Evaluating cross-border operational risks, talent retention, and multiple arbitrage in volatile markets.
+            </p>
+<a class="text-xs font-bold text-cedar hover:underline" href="#read-insight-4">Read Article →</a>
+</div>
+</div>
+<!-- Insight 5: Balanced Scorecard -->
+<div class="insight-card bg-white rounded-xl overflow-hidden border border-cedar-border hover:shadow-lg transition-all group" data-category="balanced-scorecard">
+<div class="relative h-44 overflow-hidden bg-cedar-dark">
+<img alt="Balanced Scorecard Strategy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEpI_J1DD9SQnNpXnS6fXMzG5uUK07ddwhAbK7gT83auEnmUcZbcK4vuAGdLlsPfCNxdqzO_EPLZQnI3bNCh4P0-TFbRmaBUcyRbgq2Wt2br03vSLA_1RWpIqhFGHKch8kViDbYP42eBesHtXWAsYB4nc4kj_sxeQjviYC63QG4p4XxfP_2MQRt6j3yAJeDvgpj-I0QhxMP3dMUyM0L6mJdKOmJy-SMlA-JnQmyuUeCkQWAn4Rx9FZ"/>
+<div class="absolute top-3 left-3 bg-black/60 backdrop-blur-xs text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded">
+              Balanced Scorecard
+            </div>
+</div>
+<div class="p-6">
+<span class="text-[11px] font-semibold text-cedar-accent uppercase tracking-wider">Sanjiv Anand, Chairman</span>
+<h3 class="text-lg font-serif font-bold text-cedar-dark group-hover:text-cedar transition-colors mt-1 mb-2">
+              Executing Strategy with the Balanced Scorecard
+            </h3>
+<p class="text-xs text-cedar-muted leading-relaxed mb-4">
+              From Kaplan-Norton roots to modern OKR integration: translating strategy maps into measurable quarterly outcomes.
+            </p>
+<a class="text-xs font-bold text-cedar hover:underline" href="#read-insight-5">Watch Masterclass →</a>
+</div>
+</div>
+<!-- Insight 6: Bank Strategy -->
+<div class="insight-card bg-white rounded-xl overflow-hidden border border-cedar-border hover:shadow-lg transition-all group" data-category="bank-strategy">
+<div class="relative h-44 overflow-hidden bg-cedar-dark">
+<img alt="Bank Strategy Robotics" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfWR8IVv6ytzZadzE2hC4egCmItqKcvwqYP0VrEoOG0u35_NANFnOTT0ki-Oq_DBoLhKSm34IUfnbEcNyzpeHhJEoJqrUzPkoSeFy2OQYvQ2Y2u527CLf4HdiKToYxC-rymBfFjR1BWWtd7VGoMhlIJWxBOXN49iFQhilJdIXLg_WuXJ4NPABBIb1eXOG-Huj3EwICgVMGebREYkfhLlB-TB79H3EZCUOXjbq-WYtCrsS1Xcb2abx5"/>
+<div class="absolute top-3 left-3 bg-black/60 backdrop-blur-xs text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded">
+              Bank Strategy
+            </div>
+</div>
+<div class="p-6">
+<span class="text-[11px] font-semibold text-cedar uppercase tracking-wider">Executive Whitepaper</span>
+<h3 class="text-lg font-serif font-bold text-cedar-dark group-hover:text-cedar transition-colors mt-1 mb-2">
+              7 Steps To Building A Future-Ready Bank
+            </h3>
+<p class="text-xs text-cedar-muted leading-relaxed mb-4">
+              A comprehensive blueprint for legacy core replacement, cloud transformation, and real-time ledger intelligence.
+            </p>
+<a class="text-xs font-bold text-cedar hover:underline" href="#read-insight-6">Download Whitepaper →</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: OurLatestInsights -->
+<!-- BEGIN: StrategicBrandStatement -->
+<!-- Rich Forest Green full-width call to action panel with dialogue invitation -->
+<section class="py-20 lg:py-24 bg-cedar-dark text-white relative overflow-hidden" id="contact-dialogue">
+<!-- Subtle geometric background watermark -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 rounded-full border border-cedar/20 pointer-events-none"></div>
+<div class="absolute -right-10 -bottom-10 w-72 h-72 rounded-full border border-cedar/10 pointer-events-none"></div>
+<div class="max-w-5xl mx-auto px-4 lg:px-12 text-center relative z-10">
+<span class="inline-block text-cedar-tint text-xs font-bold uppercase tracking-[0.25em] mb-4">Executive Advisory Dialogue</span>
+<h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-light mb-6">
+        Talk to our <span class="italic font-semibold text-cedar-tint">Consulting leaders</span> about how we can add measurable value
+      </h2>
+<p class="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
+<a class="text-white underline decoration-cedar-accent underline-offset-4 hover:text-cedar-tint" href="#contact-modal">Contact us</a> today to make strategy &amp; innovation work across your enterprise, digital architecture, and investments.
+      </p>
+<div class="flex flex-wrap justify-center gap-4">
+<a class="px-8 py-4 rounded-full bg-cedar hover:bg-cedar-light text-white font-bold text-xs uppercase tracking-wider shadow-lg transition-all inline-flex items-center gap-2" href="#contact">
+<span>Schedule an Executive Dialogue</span>
+<i class="fa-solid fa-arrow-right text-[10px]"></i>
+</a>
+<a class="px-8 py-4 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold text-xs uppercase tracking-wider backdrop-blur-sm border border-white/20 transition-all" href="#worldwide-network">
+<span>Explore Global Offices</span>
+</a>
+</div>
+</div>
+</section>
+<!-- END: StrategicBrandStatement -->
+<!-- BEGIN: ClientCasesSection -->
+<!-- High craft showcase covering Financial Services, Consumer, and Manufacturing / PE -->
+<section class="py-20 lg:py-28 bg-white border-b border-cedar-border" id="client-cases">
+<div class="max-w-7xl mx-auto px-4 lg:px-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+<div>
+<span class="text-xs font-bold uppercase tracking-[0.2em] text-cedar block mb-2">Proven Track Record</span>
+<h2 class="text-3xl lg:text-4xl font-serif font-bold text-cedar-dark">Client Cases &amp; Transformations</h2>
+</div>
+<a class="text-sm font-semibold text-cedar hover:text-cedar-dark inline-flex items-center gap-2" href="#all-cases">
+<span>Explore our other client cases</span>
+<i class="fa-solid fa-chevron-right text-xs"></i>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Case 1: Financial Services -->
+<div class="bg-cedar-warm rounded-xl overflow-hidden border border-cedar-border shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div class="relative h-48 overflow-hidden bg-cedar-charcoal">
+<img alt="Payment terminal cards Middle East" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-85" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ8zfFGgrY95wNJiH12SOt6RppgaUZOp6HGFL_qvRQdPSIqdfEglRKGe3WWF1uEYLgeAxtkJaz7rZvbOGRb_dy3qxV2sjP4wg5uf2JWhpVTjyA63rqmjyLxxsn7LiDAv4HhxfYXtAqt8JaLpRgbHxNe7m2KOYSdX0Pwa_utvenebGeqZfoqV-qJC4cVohrBgfGap9S5j892NmI4B7QQUE8udS43zPr1eKZ1M4dE24gxy3O2rP4Ds_L"/>
+<div class="absolute top-3 left-3 bg-cedar text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded">
+              Financial Services
+            </div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="text-lg font-serif font-bold text-cedar-dark group-hover:text-cedar transition-colors mb-3">
+                Premier Payment Solutions Provider in the Middle East: Seamless Cards &amp; Merchant Acquiring
+              </h3>
+<p class="text-xs text-cedar-muted leading-relaxed mb-4">
+                Formulated a multi-year digital transformation roadmap, optimized switch architecture, and enhanced merchant acquiring margins across 6 GCC jurisdictions.
+              </p>
+</div>
+<div class="pt-4 border-t border-cedar-border flex items-center justify-between">
+<span class="text-[11px] font-bold text-cedar-accent">Cards &amp; Payments</span>
+<a class="text-xs font-bold text-cedar group-hover:text-cedar-dark" href="#case-1">View Case Study →</a>
+</div>
+</div>
+</div>
+<!-- Case 2: Consumer -->
+<div class="bg-cedar-warm rounded-xl overflow-hidden border border-cedar-border shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div class="relative h-48 overflow-hidden bg-cedar-charcoal">
+<img alt="Bottled Water Logistics Operations" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-85" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcHepA2qQR4x86F2v1V28VnsT7r2_QH6ATPwDG5pmMGcyadC6o1SSKui7luoQ7e1IJ-MIiARVNIDix-ORwvz_Q6Gr-i3YxuK-rPxGvGzr1ha-2WKjuxT56LCzgKjUf0DOavnl7hiJOvhm37QAtlChX4pU8PVDt-h6kLvayCYrUH4-jYgJoKNbP1e_LjRL2YzVhMdOowANjHiW0VR2ijD_kWtwB5osdi9YI-CW_MTuHT4H9J_lYA6QZ"/>
+<div class="absolute top-3 left-3 bg-cedar-accent text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded">
+              Consumer
+            </div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="text-lg font-serif font-bold text-cedar-dark group-hover:text-cedar transition-colors mb-3">
+                Process Improvement for a UAE-based Bottled Water Company
+              </h3>
+<p class="text-xs text-cedar-muted leading-relaxed mb-4">
+                Streamlined route-to-market dispatch networks, introduced real-time fleet telematics, and improved bottom-line plant yield by 18.4% within 12 months.
+              </p>
+</div>
+<div class="pt-4 border-t border-cedar-border flex items-center justify-between">
+<span class="text-[11px] font-bold text-cedar-accent">Supply Chain &amp; Logistics</span>
+<a class="text-xs font-bold text-cedar group-hover:text-cedar-dark" href="#case-2">View Case Study →</a>
+</div>
+</div>
+</div>
+<!-- Case 3: Manufacturing -->
+<div class="bg-cedar-warm rounded-xl overflow-hidden border border-cedar-border shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div class="relative h-48 overflow-hidden bg-cedar-charcoal">
+<img alt="Advanced Manufacturing Due Diligence" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-85" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq8bQLfMAsZHLle52yWN96OYrwKB_u47aKntoUe8gom2R2TJNzJuRwPya-uD81cNkgwwR0AnyEFIQWELiNyVsOgaxYtvqMOWrSC-lMz5EBTdkzGkchuBFp66tixMP16BdsD4zXcD2-1G4ioTTveUMiiLg47lwsa7Rjl123wmcbccyqEAGMtyazt5aitPvrYTaNaKWxcCmb9OeDjKoYaQ3txYNKEAjRR3N8DfzIvCJNWjaJLHi8blTu"/>
+<div class="absolute top-3 left-3 bg-cedar-dark text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded">
+              Manufacturing &amp; PE
+            </div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="text-lg font-serif font-bold text-cedar-dark group-hover:text-cedar transition-colors mb-3">
+                Plastic Packaging PE Due Diligence &amp; Operational Post-Merger Plan
+              </h3>
+<p class="text-xs text-cedar-muted leading-relaxed mb-4">
+                Delivered technical and commercial buy-side assessment for an international private equity buyout syndicate evaluating sustainable polymer facilities.
+              </p>
+</div>
+<div class="pt-4 border-t border-cedar-border flex items-center justify-between">
+<span class="text-[11px] font-bold text-cedar-accent">M&amp;A &amp; Commercial Due Diligence</span>
+<a class="text-xs font-bold text-cedar group-hover:text-cedar-dark" href="#case-3">View Case Study →</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ClientCasesSection -->
+<!-- BEGIN: AboutCedarHeritage -->
+<!-- Authentic story, Renaissance Worldwide legacy, Balanced Scorecard, and IBS Intelligence -->
+<section class="py-20 lg:py-28 bg-[#FFFFFF] border-b border-cedar-border" id="about-heritage">
+<div class="max-w-7xl mx-auto px-4 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Column: Primary Narrative & Forbes Stature -->
+<div class="lg:col-span-7">
+<div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-cedar mb-4">
+<span>About Cedar</span>
+<i class="fa-solid fa-play text-[9px]"></i>
+</div>
+<h2 class="text-3xl sm:text-4xl font-serif font-bold text-cedar-dark leading-tight mb-6">
+            A Forbes-ranked global consulting firm with a 40-year track record across industry sectors.
+          </h2>
+<div class="space-y-4 text-sm sm:text-base text-cedar-muted leading-relaxed">
+<p>
+              We assist clients from strategy to execution in creating breakthrough strategy, innovating processes, building performance-oriented organizations, and implementing future-ready business technology for the digital world.
+            </p>
+<p>
+              Our heritage includes the former <strong class="text-cedar-dark font-semibold">US$1 Billion Renaissance Worldwide</strong>, led by creators of the <strong class="text-cedar-dark font-semibold">Balanced Scorecard</strong> — the world's leading strategy execution &amp; performance management framework.
+            </p>
+<p>
+              Our <strong class="text-cedar-dark font-semibold">Financial Services &amp; FinTech</strong> practice is a <em class="text-cedar font-serif">Centre of Excellence</em>, delivering client deep knowledge and expertise in transforming their business and technology models in the midst of a digital revolution. Cedar's UK group unit, <strong class="text-cedar-dark font-semibold">IBS Intelligence</strong>, is a leading pure-play FinTech research, news analysis, and advisory firm; it is the definitive source for analysis of global financial technology markets. IBSi's Sales League Table (SLT) is the global industry barometer ranking BankingTech suppliers.
+            </p>
+<p>
+              Built on the expertise of Cedar and IBS Intelligence is <strong class="text-cedar-dark font-semibold">Cedar Hill Capital</strong>, an independently managed $20-25M fund investing in pre-series A FinTech SaaS Indian companies with a global ambition.
+            </p>
+<p class="font-serif italic font-bold text-cedar-dark text-lg pt-2">
+              We make Strategy &amp; Innovation work.
+            </p>
+</div>
+</div>
+<!-- Right Column: Strategic Pillars & Quick Stat Card -->
+<div class="lg:col-span-5 space-y-6">
+<div class="bg-cedar-warm p-8 rounded-2xl border border-cedar-border">
+<h3 class="text-xs font-bold uppercase tracking-widest text-cedar-muted mb-6">Firm Pillars</h3>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-cedar text-white flex items-center justify-center flex-shrink-0 font-bold text-sm">
+                  01
+                </div>
+<div>
+<h4 class="font-serif font-bold text-cedar-dark text-base">Who We Are</h4>
+<p class="text-xs text-cedar-muted mt-1 leading-normal">Global strategy leaders with 4 decades of proven implementation integrity in 16+ countries.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-cedar-accent text-white flex items-center justify-center flex-shrink-0 font-bold text-sm">
+                  02
+                </div>
+<div>
+<h4 class="font-serif font-bold text-cedar-dark text-base">What We Do</h4>
+<p class="text-xs text-cedar-muted mt-1 leading-normal">Strategy formulation, operational excellence, Balanced Scorecard deployment, and core banking modernization.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-cedar-dark text-white flex items-center justify-center flex-shrink-0 font-bold text-sm">
+                  03
+                </div>
+<div>
+<h4 class="font-serif font-bold text-cedar-dark text-base">How We Create Value</h4>
+<p class="text-xs text-cedar-muted mt-1 leading-normal">IBS Intelligence proprietary benchmarking, deep industry ecosystems, and venture-backed FinTech insights.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Fast Facts Block -->
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white p-6 rounded-xl border border-cedar-border text-center">
+<span class="block text-3xl font-serif font-bold text-cedar">40+</span>
+<span class="text-xs font-semibold text-cedar-muted uppercase tracking-wider">Years Experience</span>
+</div>
+<div class="bg-white p-6 rounded-xl border border-cedar-border text-center">
+<span class="block text-3xl font-serif font-bold text-cedar-accent">$1B+</span>
+<span class="text-xs font-semibold text-cedar-muted uppercase tracking-wider">Renaissance Legacy</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: AboutCedarHeritage -->
+<!-- BEGIN: CareersRecruitmentBanner -->
+<!-- "Come Join Our Team!" recruitment banner matching reference photo strip -->
+<section class="py-12 bg-white" id="careers">
+<div class="max-w-7xl mx-auto px-4 lg:px-12">
+<div class="relative rounded-2xl overflow-hidden bg-cedar-dark text-white shadow-xl min-h-[220px] flex items-center">
+<!-- Team Hands In Unison Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Consulting Team Collaborating" class="w-full h-full object-cover object-right opacity-35" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBwhbAgjcysHKCFi8OahHxotmGvGjhQO35FhFNTcZddq_z9b-mlw3cCZnN2wXu1k-LuatQvaOZXG48mPeMg2IZR1IjkV5IZqls63ljToM1ld8yhU64qtUHAgPRxUOG3r2RupyQZlOXWaC6e-5NG2W_1yCyyFIVmEMAS7PAVRcB2MYDURjqlf4ZWty_UBTJ3J79XT73j5phcn7e4f7T-VjOVdQiHIp0pOll3JekZqOmo32tYt3q6j-c"/>
+<div class="absolute inset-0 bg-gradient-to-r from-cedar-dark via-cedar-dark/90 to-transparent"></div>
+</div>
+<div class="relative z-10 px-8 py-10 lg:px-12 w-full max-w-3xl">
+<h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-6">
+            Come Join Our Team!
+          </h2>
+<!-- Quick Navigation Pill Links matching reference -->
+<div class="flex flex-wrap items-center gap-3 sm:gap-6 text-sm font-semibold text-cedar-tint mb-6">
+<a class="hover:text-white transition-colors flex items-center gap-1" href="#why-cedar">
+<span>Why Cedar?</span>
+<i class="fa-solid fa-angle-right text-xs text-cedar-accent"></i>
+</a>
+<span class="text-white/20 hidden sm:inline">•</span>
+<a class="hover:text-white transition-colors flex items-center gap-1" href="#growth-cedar">
+<span>Growth at Cedar</span>
+<i class="fa-solid fa-angle-right text-xs text-cedar-accent"></i>
+</a>
+<span class="text-white/20 hidden sm:inline">•</span>
+<a class="hover:text-white transition-colors flex items-center gap-1" href="#life-cedar">
+<span>Life at Cedar</span>
+<i class="fa-solid fa-angle-right text-xs text-cedar-accent"></i>
+</a>
+<span class="text-white/20 hidden sm:inline">•</span>
+<a class="hover:text-white transition-colors flex items-center gap-1" href="#roles-cedar">
+<span>Roles at Cedar</span>
+<i class="fa-solid fa-angle-right text-xs text-cedar-accent"></i>
+</a>
+</div>
+<a class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-cedar hover:bg-cedar-light text-white text-xs font-bold uppercase tracking-wider transition-all" href="#open-roles">
+<span>Explore Open Roles</span>
+<i class="fa-solid fa-arrow-right text-[10px]"></i>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: CareersRecruitmentBanner -->
+<!-- BEGIN: GlobalCorporateFooter -->
+<!-- Multi-column architecture with full legal, Cedar worldwide links, and brand mark -->
+<footer class="bg-cedar-warm text-cedar-charcoal border-t border-cedar-border pt-16 pb-12">
+<div class="max-w-7xl mx-auto px-4 lg:px-12">
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-16">
+<!-- Col 1: Worldwide -->
+<div>
+<h4 class="text-xs font-bold uppercase tracking-wider text-cedar-dark mb-4">Cedar Worldwide</h4>
+<ul class="space-y-2.5 text-xs text-cedar-muted">
+<li><a class="hover:text-cedar transition-colors" href="#americas">Americas (New York)</a></li>
+<li><a class="hover:text-cedar transition-colors" href="#emea">EMEA (London)</a></li>
+<li><a class="hover:text-cedar transition-colors" href="#middle-east">Middle East (Dubai)</a></li>
+<li><a class="hover:text-cedar transition-colors" href="#south-asia">South Asia (Mumbai)</a></li>
+<li><a class="hover:text-cedar transition-colors" href="#singapore">APAC (Singapore)</a></li>
+</ul>
+</div>
+<!-- Col 2: Industry Coverage -->
+<div>
+<h4 class="text-xs font-bold uppercase tracking-wider text-cedar-dark mb-4">Industry Coverage</h4>
+<ul class="space-y-2.5 text-xs text-cedar-muted">
+<li><a class="hover:text-cedar transition-colors" href="#banking">Retail &amp; Corporate Banking</a></li>
+<li><a class="hover:text-cedar transition-colors" href="#fintech">FinTech &amp; Neo-banks</a></li>
+<li><a class="hover:text-cedar transition-colors" href="#private-equity">Private Equity &amp; VC</a></li>
+<li><a class="hover:text-cedar transition-colors" href="#consumer-retail">Consumer &amp; Retail</a></li>
+<li><a class="hover:text-cedar transition-colors" href="#manufacturing">Industrial &amp; Logistics</a></li>
+</ul>
+</div>
+<!-- Col 3: Practice Areas -->
+<div>
+<h4 class="text-xs font-bold uppercase tracking-wider text-cedar-dark mb-4">Practice Areas</h4>
+<ul class="space-y-2.5 text-xs text-cedar-muted">
+<li><a class="hover:text-cedar transition-colors" href="#strategy-innovation">Strategy Formulation</a></li>
+<li><a class="hover:text-cedar transition-colors" href="#balanced-scorecard-pract">Balanced Scorecard</a></li>
+<li><a class="hover:text-cedar transition-colors" href="#digital-transformation">Digital Transformation</a></li>
+<li><a class="hover:text-cedar transition-colors" href="#core-banking">Core Systems &amp; AI</a></li>
+<li><a class="hover:text-cedar transition-colors" href="#mergers-acquisitions">M&amp;A Due Diligence</a></li>
+</ul>
+</div>
+<!-- Col 4: Innovation Hubs -->
+<div>
+<h4 class="text-xs font-bold uppercase tracking-wider text-cedar-dark mb-4">Cedar-IBSi Units</h4>
+<ul class="space-y-2.5 text-xs text-cedar-muted">
+<li><a class="hover:text-cedar transition-colors" href="#ibsi">IBS Intelligence</a></li>
+<li><a class="hover:text-cedar transition-colors" href="#fintech-lab-footer">Cedar-IBSi FinTech Lab</a></li>
+<li><a class="hover:text-cedar transition-colors" href="#slt">Sales League Table (SLT)</a></li>
+<li><a class="hover:text-cedar transition-colors" href="#cedar-hill">Cedar Hill Capital Fund</a></li>
+<li><a class="hover:text-cedar transition-colors" href="#executive-briefings">Executive Briefings</a></li>
+</ul>
+</div>
+<!-- Col 5: Firm & Culture -->
+<div>
+<h4 class="text-xs font-bold uppercase tracking-wider text-cedar-dark mb-4">Firm &amp; Culture</h4>
+<ul class="space-y-2.5 text-xs text-cedar-muted">
+<li><a class="hover:text-cedar transition-colors" href="#thought-leadership">Thought Leadership</a></li>
+<li><a class="hover:text-cedar transition-colors" href="#leadership-team">Senior Leadership</a></li>
+<li><a class="hover:text-cedar transition-colors" href="#life-at-cedar">Life at Cedar</a></li>
+<li><a class="hover:text-cedar transition-colors" href="#alumni-network">Alumni Network</a></li>
+<li><a class="hover:text-cedar transition-colors" href="#newsroom">Newsroom &amp; Press</a></li>
+</ul>
+</div>
+<!-- Col 6: Logo & Brand Seal -->
+<div class="flex flex-col items-start lg:items-end justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 flex-shrink-0">
+<svg class="w-full h-full" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<circle cx="24" cy="24" fill="#DFE8DF" fill-opacity="0.3" r="22" stroke="#567C43" stroke-width="2.5"></circle>
+<circle cx="24" cy="24" r="16" stroke="#173A32" stroke-dasharray="3 3" stroke-width="1.8"></circle>
+<circle cx="24" cy="24" r="10" stroke="#567C43" stroke-width="2"></circle>
+<path d="M24 10V38M16 20H32M18 28H30M20 34H28" stroke="#173A32" stroke-linecap="round" stroke-width="2"></path>
+<circle cx="24" cy="24" fill="#C78B49" r="3"></circle>
+</svg>
+</div>
+<div class="flex flex-col text-left">
+<span class="text-xl font-black tracking-[0.2em] text-cedar-dark leading-none">CEDAR</span>
+<span class="text-[7.5px] font-bold tracking-[0.2em] text-cedar-muted mt-1 uppercase">Strategy &amp; Innovation</span>
+</div>
+</div>
+<div class="mt-6 lg:mt-0 flex items-center space-x-3 text-cedar-dark text-base">
+<a aria-label="LinkedIn" class="w-8 h-8 rounded-full border border-cedar-border flex items-center justify-center hover:bg-cedar hover:text-white transition-all" href="https://linkedin.com"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
+<a aria-label="X Twitter" class="w-8 h-8 rounded-full border border-cedar-border flex items-center justify-center hover:bg-cedar hover:text-white transition-all" href="https://twitter.com"><i class="fa-brands fa-x-twitter text-xs"></i></a>
+<a aria-label="YouTube" class="w-8 h-8 rounded-full border border-cedar-border flex items-center justify-center hover:bg-cedar hover:text-white transition-all" href="https://youtube.com"><i class="fa-brands fa-youtube text-xs"></i></a>
+<a aria-label="Facebook" class="w-8 h-8 rounded-full border border-cedar-border flex items-center justify-center hover:bg-cedar hover:text-white transition-all" href="https://facebook.com"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+</div>
+</div>
+</div>
+<!-- Legal and Copyright bar -->
+<div class="pt-8 border-t border-cedar-border/70 flex flex-col sm:flex-row items-center justify-between text-[11px] text-cedar-muted gap-4">
+<div>
+          © 2026 Cedar Management Consulting International LLC. All rights reserved.
+        </div>
+<div class="flex items-center space-x-6">
+<a class="hover:text-cedar-dark transition-colors" href="#privacy">Privacy Statement</a>
+<a class="hover:text-cedar-dark transition-colors" href="#terms">Terms of Engagement</a>
+<a class="hover:text-cedar-dark transition-colors" href="#cookies">Cookie Preferences</a>
+<a class="hover:text-cedar-dark transition-colors" href="#disclaimer">Regulatory Disclaimer</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: GlobalCorporateFooter -->
+<!-- BEGIN: InteractiveScripts -->
+<!-- JavaScript for audio playback simulation, category filtering, and mobile menu -->
+<script data-purpose="audio-playback-simulation">
+    document.addEventListener('DOMContentLoaded', () => {
+      // Audio playback toggle simulation
+      const playBtn = document.getElementById('podcast-play-btn');
+      const playIcon = document.getElementById('podcast-play-icon');
+      const timeDisplay = document.getElementById('podcast-time');
+      const speedBtn = document.getElementById('playback-speed-btn');
+      const waveformBars = document.querySelectorAll('#waveform-container span');
+      
+      let isPlaying = false;
+      let playInterval = null;
+      let seconds = 272; // 04:32
+
+      if (playBtn) {
+        playBtn.addEventListener('click', () => {
+          isPlaying = !isPlaying;
+          if (isPlaying) {
+            playIcon.classList.remove('fa-play');
+            playIcon.classList.add('fa-pause');
+            
+            // Animate waveform
+            playInterval = setInterval(() => {
+              seconds++;
+              const m = Math.floor(seconds / 60);
+              const s = seconds % 60;
+              timeDisplay.textContent = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')} / 38:15`;
+              
+              waveformBars.forEach(bar => {
+                const randomHeight = Math.floor(Math.random() * 24) + 6;
+                bar.style.height = `${randomHeight}px`;
+              });
+            }, 1000);
+          } else {
+            playIcon.classList.remove('fa-pause');
+            playIcon.classList.add('fa-play');
+            clearInterval(playInterval);
+          }
+        });
+      }
+
+      // Speed multiplier cycle
+      const speeds = ['1x', '1.25x', '1.5x', '2x'];
+      let speedIndex = 0;
+      if (speedBtn) {
+        speedBtn.addEventListener('click', () => {
+          speedIndex = (speedIndex + 1) % speeds.length;
+          speedBtn.textContent = speeds[speedIndex];
+        });
+      }
+
+      // Mobile Menu Toggle
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileBtn && mobileMenu) {
+        mobileBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+
+      // Insights Filter State Switcher
+      const filterButtons = document.querySelectorAll('.filter-chip');
+      const insightCards = document.querySelectorAll('.insight-card');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Switch button styling
+          filterButtons.forEach(b => {
+            b.classList.remove('bg-cedar', 'text-white');
+            b.classList.add('bg-white', 'text-cedar-charcoal');
+          });
+          btn.classList.add('bg-cedar', 'text-white');
+          btn.classList.remove('bg-white', 'text-cedar-charcoal');
+
+          const filterValue = btn.getAttribute('data-filter');
+
+          insightCards.forEach(card => {
+            if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+<!-- END: InteractiveScripts -->
+</body></html>
